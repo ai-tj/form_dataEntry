@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage DATA ENTRY</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+            
+        body {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqZ50jgqIqdAj_fHVJTzcwH97J8A5bNO46LA&usqp=CAU");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 20px;
+        }
+        
+        h1 {
+            color: #000000;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            font-weight: thin;
+            color: #000000;
+        }
+        
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+        
+        .btn-group {
+            margin-top: 20px;
+            text-align: left;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            background-color: #00a413;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.5s;
+        }
+        
+        .btn-reset {
+            background-color: #dc3545;
+        }
+        
+        .btn:hover {
+            background-color: #007402;
+        }
+        
+        .btn-reset:hover {
+            background-color: #9d0b1a;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Homepage DATA ENTRY</h1>
+        <form>
+            <div class="form-group">
+                <label for="nama">Nama :</label>
+                <input type="text" id="nama" name="nama">
+            </div>
+            <div class="form-group">
+                <label for="nrp">NRP :</label>
+                <input type="text" id="nrp" name="nrp">
+            </div>
+            <div class="form-group">
+                <label for="kelas">Kelas :</label>
+                <input type="text" id="kelas" name="kelas">
+            </div>
+            <div class="form-group">
+                <label>Jenis Kelamin :</label>
+                <input type="radio" id="pria" name="jenis_kelamin" value="pria">
+                <label for="pria">Pria</label>
+                <input type="radio" id="wanita" name="jenis_kelamin" value="wanita">
+                <label for="wanita">Wanita</label>
+            </div>
+            <div class="form-group">
+                <label for="agama">Agama :</label>
+                <select id="agama" name="agama">
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="budha">Budha</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ttl">Tempat/Tanggal Lahir :</label>
+                <input type="text" id="ttl" name="ttl">
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat :</label>
+                <textarea id="alamat" name="alamat" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Riwayat Pendidikan :</label>
+                <div>
+                    <label for="sd">SD :</label>
+                    <input type="text" id="sd" name="sd">
+                </div>
+                <div>
+                    <label for="smp">SMP :</label>
+                    <input type="text" id="smp" name="smp">
+                </div>
+                <div>
+                    <label for="sma">SMA :</label>
+                    <input type="text" id="sma" name="sma">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="homepage">Homepage :</label>
+                <input type="text" id="homepage" name="homepage">
+            </div>
+            <div class="form-group">
+                <label for="hobby">Hobby :</label>
+                <textarea id="hobby" name="hobby" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Interest :</label>
+                <input type="checkbox" id="komputer" name="interest[]" value="Komputer">
+                <label for="komputer">Komputer</label>
+                <input type="checkbox" id="sport" name="interest[]" value="Sport">
+                <label for="sport">Sport</label>
+                <input type="checkbox" id="travelling" name="interest[]" value="Travelling">
+                <label for="travelling">Travelling</label>
+                <input type="checkbox" id="writing" name="interest[]" value="Writing">
+                <label for="writing">Writing</label>
+                <input type="checkbox" id="reading" name="interest[]" value="Reading">
+                <label for="reading">Reading</label>
+            </div>
+            <div class="btn-group">
+                <button type="submit" class="btn">Simpan</button>
+                <button type="reset" class="btn btn-reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
